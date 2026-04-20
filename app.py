@@ -112,6 +112,15 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+[data-testid="stAppViewContainer"] {
+    background-color: #0a0f0a !important;
+    color: #ffffff !important;
+}
+
+[data-testid="stMarkdownContainer"] p {
+    color: #ffffff !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
 
 html, body, [class*="css"] {
@@ -220,7 +229,11 @@ section[data-testid="stSidebar"] {
     background: #060f06;
     border-right: 1px solid #1a3a1a;
 }
+.player-name { color: #ffffff !important; }
+.player-meta { color: rgba(255,255,255,0.4) !important; }
+            
 </style>
+            
 """, unsafe_allow_html=True)
 
 CLUSTER_COLORS = {
